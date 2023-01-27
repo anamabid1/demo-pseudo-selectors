@@ -1,0 +1,53 @@
+.flex-container{
+    display:flex;
+    justify-content: center;
+}
+
+section{
+    padding: 3rem;
+    color:white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+section: first-child{
+    background-color: red;
+
+}
+
+section: nth-child(2){
+    background-color: tomato;
+}
+
+section: nth-child(3){
+    background-color: orange;
+}
+
+section: nth-child(4){
+    background-color: yellow;
+    /*moves to the very end of row, all the way to the right replaces number 6*/
+    order: 1;
+}
+
+section: nth-child(5){
+    background-color: blue;
+}
+
+section: last-child{
+    background-color: purple;
+}
+
+section: only-child{
+    background-color: grey;
+    color:black;
+}
+
+p: first-of-type{
+    font-weight:bold;
+    font-family:sans-serif;
+}
+
+p: last-of-type{
+    font-family:sans-serif;
+    font-size:1.125rem;
+}
